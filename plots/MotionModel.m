@@ -1,4 +1,4 @@
-function [ out ] = MotionModelA( wx, L )
+function [ out ] = MotionModel( wx, L )
 %MOTIONMODEL Summary of this function goes here
 %   Detailed explanation goes here
 
