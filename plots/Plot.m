@@ -14,7 +14,7 @@ title('H - GAUSSIAN');
 % MOTION PLOT
 figure
 L = 10;
-M = MotionModel(X, L);
+M = MotionModel(X, Y, L, pi/4);
 surf(X, Y, M); shading interp
 title('H - MOTION');
 

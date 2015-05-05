@@ -13,9 +13,9 @@ for wy = origin_wy:dest_wy
     end
 end
     
-H = mat2gray(H);
 figure
 imshow(H);
 colormap gray
 title('Modulation Transfer Function')
-ft = ft .* ifftshift(H);
+H = ifftshift(H);
+ft = ft .* H;
