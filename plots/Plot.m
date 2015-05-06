@@ -6,15 +6,15 @@ wy = wx';
 
 % GAUSSIAN PLOT
 figure
-sigma = 0.1;
+sigma = 0.09;
 G = GaussianModel(X, Y, sigma);
 surf(X, Y, G);shading interp
 title('H - GAUSSIAN');
 
 % MOTION PLOT
 figure
-L = 10;
-M = MotionModel(X, Y, L, pi/4);
+L = 0.5;
+M = MotionModel(X, Y, L, 0);
 surf(X, Y, M); shading interp
 title('H - MOTION');
 
